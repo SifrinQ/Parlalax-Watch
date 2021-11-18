@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background: #000000;
+    perspective: 100px;
+    transform-style: preserve-3d;
+
+    /* Создание сфер на заднем фоне */
+
+    background-image:
+       -webkit-gradient(radial, 50% 50%, 2, 50% 50%, 40, from(white), color-stop(0.1, rgba(248,255,128,.5)), to(transparent)),
+       -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 30, from(white), color-stop(0.1, rgba(255,186,170,.4)), to(transparent)),
+       -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 40, from(rgba(255,255,255,.9)), color-stop(0.05, rgba(251,255,186,.3)), to(transparent)),
+       -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 30, from(rgba(255,255,255,.4)), color-stop(0.03, rgba(253,255,219,.2)), to(transparent));
+
+    background-size: 550px 550px, 350px 350px, 250px 270px, 220px 200px;
+    background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+
+    animation-name: movement;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Анимация полета сфер */
+
+@keyframes movement
+{
+   from {
+         background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+   }
+   to {
+         background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+   }
+}
+
+.watch{
+    display: flex;
+}
+.time{
+    display: flex;
+    flex-direction: row;
+    transition-property: transform;
+}
+.container-vertical{
+    display: flex;
+    flex-direction: column;
+    height: 115px;
+    perspective: 100px;
+}
+.container-horizontal{
+    display: flex;
+    flex-direction: column;
+    height: 115px;
+    margin: 0 3px 0 3px;
+    perspective: 100px;
+}
+.section-vertical{
+    width: 5px;
+    height: 50px;
+    border-radius: 25%;
+    border: 1px solid black;
+    background: darkblue;
+    opacity: .5;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+.section-horizontal{
+    width: 50px;
+    height: 5px;
+    border-radius: 25%;
+    border: 1px solid #000000;
+    background: darkblue;
+    opacity: .5;
+    align-self: flex-end;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+.separator{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.point{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: darkblue;
+}
+.active{
+    transform: translateZ(10px);
+    background: white;
+    box-shadow: 0 0 30px 0 rgb(255, 255, 255);
+    opacity: 1;
+}
+
+
+
+

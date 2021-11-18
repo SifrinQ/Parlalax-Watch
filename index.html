@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Parallax Watch</title>
+<link rel="stylesheet" href="style/parallax.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="watch">
+
+            <!-- Каждая цифра наодиться в отдельном контейнере, с классом si, где i порядковый номер цифры(с лева на право) -->
+
+            <div class="time" id="s1" style="margin-right: 10px;">
+                
+                <!-- У каждой палочки есть свой уникальный id. Например s1sv1 и s1sh1, где s1 - контейнер, в котором она лежит, sv или sh - в каком положении она расположена,
+                вертикально или горизонтально, и последняя цифра в определяет ее порядковый номер, относительно других вертикальных или горизонтальных палочек, в этом контейнере -->
+
+                <!-- Первые две вертикальные палочки -->
+
+                <div class="container-vertical">
+                    <section class="section-vertical" id="s1sv1"></section>
+                    <section class="section-vertical" id="s1sv2" style="margin-top: 5px"></section>
+                </div>
+
+                <!-- Следущме три горизонтальные палочки -->
+
+                <div class="container-horizontal">
+                    <section class="section-horizontal" id="s1sh1" style="margin-bottom: 45px;"></section>
+                    <section class="section-horizontal" id="s1sh2" style="margin-bottom: 45px;"></section>
+                    <section class="section-horizontal" id="s1sh3"></section>
+                </div>
+
+                <!-- Последнии две вертикальные палочки -->
+
+                <div class="container-vertical">
+                    <section class="section-vertical" id="s1sv3"></section>
+                    <section class="section-vertical" id="s1sv4" style="margin-top: 5px"></section>
+                </div>
+            </div>
+
+            <!-- Дальше все по анологии с первой цифрой -->
+
+            <div class="time" id="s2">
+                <div class="container-vertical">
+                    <section class="section-vertical" id="s2sv1"></section>
+                    <section class="section-vertical" id="s2sv2" style="margin-top: 5px"></section>
+                </div>
+                <div class="container-horizontal">
+                    <section class="section-horizontal" id="s2sh1" style="margin-bottom: 45px;"></section>
+                    <section class="section-horizontal" id="s2sh2" style="margin-bottom: 45px;"></section>
+                    <section class="section-horizontal" id="s2sh3"></section>
+                </div>
+                <div class="container-vertical">
+                    <section class="section-vertical" id="s2sv3"></section>
+                    <section class="section-vertical" id="s2sv4" style="margin-top: 5px"></section>
+                </div>
+            </div>
+
+            <!-- Две точки между цифрами -->
+
+            <section class="separator" style="margin-left: 10px; margin-right: 10px">
+                <div class="point" style="margin-bottom: 10px"></div>
+                <div class="point"></div>
+            </section>
+
+
+            <div class="time" id="s3">
+                <div class="container-vertical">
+                    <section class="section-vertical" id="s3sv1"></section>
+                    <section class="section-vertical" id="s3sv2" style="margin-top: 5px"></section>
+                </div>
+                <div class="container-horizontal">
+                    <section class="section-horizontal" id="s3sh1" style="margin-bottom: 45px;"></section>
+                    <section class="section-horizontal" id="s3sh2" style="margin-bottom: 45px;"></section>
+                    <section class="section-horizontal" id="s3sh3"></section>
+                </div>
+                <div class="container-vertical">
+                    <section class="section-vertical" id="s3sv3"></section>
+                    <section class="section-vertical" id="s3sv4" style="margin-top: 5px"></section>
+                </div>
+            </div>
+
+
+            <div class="time" id="s4" style="margin-left: 10px">
+                <div class="container-vertical">
+                    <section class="section-vertical" id="s4sv1" ></section>
+                    <section class="section-vertical" id="s4sv2" style="margin-top: 5px"></section>
+                </div>
+                <div class="container-horizontal">
+                    <section class="section-horizontal" id="s4sh1" style="margin-bottom: 45px;"></section>
+                    <section class="section-horizontal" id="s4sh2" style="margin-bottom: 45px;"></section>
+                    <section class="section-horizontal" id="s4sh3"></section>
+                </div>
+                <div class="container-vertical">
+                    <section class="section-vertical" id="s4sv3"></section>
+                    <section class="section-vertical" id="s4sv4" style="margin-top: 5px"></section>
+                </div>
+            </div>
+
+            <section class="separator" style="margin-left: 10px; margin-right: 10px">
+                <div class="point" style="margin-bottom: 10px"></div>
+                <div class="point"></div>
+            </section>
+
+            <div class="time" id="s5">
+                <div class="container-vertical">
+                    <section class="section-vertical" id="s5sv1" ></section>
+                    <section class="section-vertical" id="s5sv2" style="margin-top: 5px"></section>
+                </div>
+                <div class="container-horizontal">
+                    <section class="section-horizontal" id="s5sh1" style="margin-bottom: 45px;"></section>
+                    <section class="section-horizontal" id="s5sh2" style="margin-bottom: 45px;"></section>
+                    <section class="section-horizontal" id="s5sh3"></section>
+                </div>
+                <div class="container-vertical">
+                    <section class="section-vertical" id="s5sv3"></section>
+                    <section class="section-vertical" id="s5sv4" style="margin-top: 5px"></section>
+                </div>
+            </div>
+
+
+            <div class="time" id="s6" style="margin-left: 10px">
+                <div class="container-vertical">
+                <section class="section-vertical" id="s6sv1" ></section>
+                <section class="section-vertical" id="s6sv2" style="margin-top: 5px"></section>
+            </div>
+                <div class="container-horizontal">
+                    <section class="section-horizontal" id="s6sh1" style="margin-bottom: 45px;"></section>
+                    <section class="section-horizontal" id="s6sh2" style="margin-bottom: 45px;"></section>
+                    <section class="section-horizontal" id="s6sh3"></section>
+                </div>
+                <div class="container-vertical">
+                    <section class="section-vertical" id="s6sv3"></section>
+                    <section class="section-vertical" id="s6sv4" style="margin-top: 5px"></section>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
